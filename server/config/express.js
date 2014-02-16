@@ -1,6 +1,6 @@
 var express = require("express"),
     stylus = require('stylus'),
-    passport = require('stylus');
+    passport = require('passport');
 
 module.exports = function (app, conifg) {
     function compile(str, path) {
