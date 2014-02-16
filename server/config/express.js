@@ -14,7 +14,7 @@ module.exports = function (app, conifg) {
         app.use(express.cookieParser());
         app.use(express.bodyParser());
         app.use(express.session({secret: 'multi vision unicorns'}));
-        app.use(passport.initialzie());
+        app.use(passport.initialize());
         app.use(passport.session());
         app.use(stylus.middleware(
             {

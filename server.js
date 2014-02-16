@@ -13,7 +13,7 @@ require('./server/config/mongoose')(config);
 
 var User = mongoose.model('User');
 passport.use(new LocalStrategy(
-    function (username, password, doen) {
+    function (username, password, done) {
         User.findOne({username: username}).exec(function (err, user) {
             if (user) {
                 return done(null, user);
